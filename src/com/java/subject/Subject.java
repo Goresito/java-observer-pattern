@@ -3,7 +3,7 @@ package com.java.subject;
 import java.util.*;
 import com.java.observadores.Observer;
 
-abstract class Subject {
+public abstract class Subject {
 	
 	List<Observer> listaObservadores = new ArrayList<Observer>();
 	

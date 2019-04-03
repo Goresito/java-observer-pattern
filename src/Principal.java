@@ -7,21 +7,16 @@ public class Principal {
 		
 		Button btn = new Button();
 		
-		Observer obs1 = new Gif();
-		btn.attach(obs1);
-		
-		Observer obs2 = new Image();
-		btn.attach(obs2);
-		
-		Observer obs3 = new Text();
-		btn.attach(obs3);
+		new Gif(btn);
+		new Image(btn);
+		new Text(btn);
 		
 		btn.click();
 		
 		System.out.println("-------------");
 		
-		btn.detach(obs2);
-		btn.attach(new Scrollbar());
+		//btn.detach(obs2);
+		new Scrollbar(btn);
 		
 		btn.click();
 	}
