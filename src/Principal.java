@@ -21,6 +21,7 @@ public class Principal {
 		System.out.println("-------------");
 		
 		btn.detach(obs2);
+		btn.attach(new Scrollbar());
 		
 		btn.click();
 	}

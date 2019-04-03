@@ -1,6 +1,5 @@
 package com.java.observadores;
 
-
 public class Gif extends Observer{
 	
 	public void mostrarGif() {
